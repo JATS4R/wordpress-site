@@ -91,3 +91,4 @@ The organizations listed below <strong><a href="http://jats4r.org/how-to-partici
 </tr>
 </tbody>
 </table>
+<p>:)</p>
