@@ -91,5 +91,4 @@ The organizations listed below <strong><a href="http://jats4r.org/how-to-partici
 </tr>
 </tbody>
 </table>
-<span style='display: none;'>test github hook</span>
-
+test github hook
