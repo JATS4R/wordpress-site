@@ -8,5 +8,5 @@ layout: page
 permalink: http://jats4r.org/xml-topics/
 published: true
 spacious_page_layout:
-  - right_sidebar
+  - no_sidebar_content_centered
 ---
