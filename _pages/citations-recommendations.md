@@ -33,11 +33,11 @@ See the <a href="http://jats.nlm.nih.gov/archiving/tag-library/1.1d3/chapter/tag
 	<li><strong>&lt;source&gt;</strong>. This is used for the book title for book references and journal titles for journal references.</li>
 	<li><strong>&lt;year&gt;</strong>. This should contain the 4-digit year of publication. If the element contains anything other than a single 4-digit year (such as, for example, “2012A”, “2005Q1”), then use the @iso-8601-date attribute to specify the 4-digit year.</li>
 	<li><strong>&lt;pub-id&gt;</strong>. This text content of this element should be used to hold a formal identifier, such as a DOI, of the cited work. The @pub-id-type attribute must be used -- see the next recommendation.
-<p class="list-note-title" style="margin:10px 0px 5px 0px"><em><strong>A note on DOIs</strong></em>:</p>
-<p>When specifying a DOI, in the contents of the element, use the DOI “name”, which is the non-URI form of the identifier (beginning with “10.”). If a URL for the work is known, that can be included in the @xlink:href attribute, for display purposes only. In other words, the machine-readable, canonical identifier should be given in the text content, and machines ingesting the metadata should look for the identifier there.</p>
-<p>A DOI should be tagged as follows:
-&lt;pub-id pub-id-type="doi" assigning-authority="crossref" xlink:href="http://doi.org/10.1234/1234321"&gt;10.1234/1234321&lt;/pub-id&gt;</p>
-</li>
+<p class="list-note-title" style="margin: 10px 0px 5px 0px;"><em><strong>A note on DOIs</strong></em>:</p>
+When specifying a DOI, in the contents of the element, use the DOI “name”, which is the non-URI form of the identifier (beginning with “10.”). If a URL for the work is known, that can be included in the @xlink:href attribute, for display purposes only. In other words, the machine-readable, canonical identifier should be given in the text content, and machines ingesting the metadata should look for the identifier there.
+
+A DOI should be tagged as follows:
+&lt;pub-id pub-id-type="doi" assigning-authority="crossref" xlink:href="http://doi.org/10.1234/1234321"&gt;10.1234/1234321&lt;/pub-id&gt;</li>
 	<li><strong>@pub-id-type on &lt;pub-id&gt;</strong>. Use this attribute to specify the type of the identifier. For example, a DOI would have the @pub-id-type value of “doi”. The value should be one of the valid values from the list in the Tag Library.</li>
 	<li><strong>&lt;fpage&gt;, &lt;lpage&gt; and &lt;elocation-id&gt;</strong>. The first and last page elements should be used for traditional print publications. The last page should always exceed the number used in the first page, ie editorial style of shortening the last page value should not be used as that is only useful for human readability and not for machine consumption. Many non-print products will not have first and last page values, but a unique number that is called the elocation-id; in these instances, the &lt;fpage&gt; and &lt;lpage&gt; values should not be used but replaced with an &lt;elocation-id&gt;.</li>
 </ol>
