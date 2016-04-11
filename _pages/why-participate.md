@@ -42,4 +42,5 @@ For example, the following are two different ~but valid!~ ways of indicating lic
 </div>
 <div style="clear: both; background-color: #deecf8; margin-top: -20px;">
 <p style="line-height: 160%; font-weight: bold; padding: 20px;">By adopting JATS4R recommendations for XML best tagging practices, we can lower the barrier to our content's reuse by the systems that handle scholarly publishing content today, such as web platforms, libraries, repositories, aggregator sites, digital catalogs, and content-discovery platforms. A little participation in JATS4R can make a big difference. <strong><a href="http://jats4r.org/how-to-participate/">Find out how you can get involved.</a></strong></p>
+
 </div>
