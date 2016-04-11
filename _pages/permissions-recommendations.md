@@ -104,7 +104,7 @@ The following examples illustrates a case where a single, composite figure is th
  &lt;front&gt;
  ...
  &lt;permissions&gt;
- &lt;copyright-statement&gt;&amp;#xa9; 2012, Alegado et al&lt;/copyright-statement&gt;
+ &lt;copyright-statement&gt;© 2012, Alegado et al&lt;/copyright-statement&gt;
  &lt;copyright-year&gt;2012&lt;/copyright-year&gt;
  &lt;copyright-holder&gt;Alegado et al&lt;/copyright-holder&gt;
  &lt;license xlink:href="http://creativecommons.org/licenses/by/4.0/"&gt;
@@ -136,7 +136,7 @@ The following examples illustrates a case where a single, composite figure is th
  &lt;/license&gt;
  &lt;/permissions&gt;
  &lt;permissions&gt;
- &lt;copyright-statement&gt;&amp;#xa9; 2012, Alegado et al&lt;/copyright-statement&gt;
+ &lt;copyright-statement&gt;© 2012, Alegado et al&lt;/copyright-statement&gt;
  &lt;copyright-year&gt;2012&lt;/copyright-year&gt;
  &lt;copyright-holder&gt;Alegado et al&lt;/copyright-holder&gt;
  &lt;license xlink:href="http://creativecommons.org/licenses/by/4.0/"&gt;
