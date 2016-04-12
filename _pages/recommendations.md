@@ -14,5 +14,5 @@ spacious_page_layout:
 The JATS4R recommendations pages contain the definitive JATS4R recommendations on tagging content in JATS XML so that it is as reusable as possible, especially by machines. Here you will find the following:
 <ol>
 	<li>A page of<a href="http://jats4r.org/general-recommendations/"> general recommendations</a> that apply to any JATS XML document as a whole.</li>
-	<li>A page that contains tagging recommendations for each article object (such as <a href="http://jats4r.org/permissions-recommendations/">permissions</a>, <a href="http://jats4r.org/math-recommendations/">math</a>, etc).</li>
+	<li>A page that contains tagging recommendations for each article object (such as <a href="http://jats4r.org/permissions-recommendations/">permissions</a>, <a href="http://jats4r.org/math-recommendations/">math</a>, &amp;c).</li>
 </ol>
