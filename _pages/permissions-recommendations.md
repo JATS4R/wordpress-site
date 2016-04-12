@@ -8,6 +8,8 @@ layout: page
 permalink: >
   http://jats4r.org/permissions-recommendations/
 published: true
+spacious_page_layout:
+  - no_sidebar_content_centered
 ---
 <h1 class="rec-heading">Permissions</h1>
 <span class="status">Status: <strong><span style="color: #29cf84;">FINAL</span></strong></span>
