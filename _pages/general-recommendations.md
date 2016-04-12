@@ -67,14 +67,14 @@ There are three different methods that an article XML file can use to refer to i
 </table>
 </li>
 	<li><strong>DOCTYPE declarations</strong>. The most common JATS articles use a DOCTYPE declaration to reference the specific version of the JATS DTD. When using a DOCTYPE declaration, the document must use PUBLIC form, with the public identifier, and the complete, absolute URL of the system identifier.For example:
-<pre>&lt;!DOCTYPE article
+<pre><code class='language-markup'>&lt;!DOCTYPE article
  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN"
  "http://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd"&gt;
 &lt;article dtd-version="1.1" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
  ...
-&lt;/article&gt;</pre>
+&lt;/article&gt;</code></pre>
 </li>
 	<li><strong>@noNamespaceSchemaLocation attribute</strong>.For example:
 <pre>&lt;article dtd-version="1.1" 
