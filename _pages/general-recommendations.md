@@ -68,24 +68,23 @@ There are three different methods that an article XML file can use to refer to i
 </li>
 	<li><strong>DOCTYPE declarations</strong>. The most common JATS articles use a DOCTYPE declaration to reference the specific version of the JATS DTD. When using a DOCTYPE declaration, the document must use PUBLIC form, with the public identifier, and the complete, absolute URL of the system identifier.For example:
 <pre><code class='language-markup'>&lt;!DOCTYPE article
- PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN"
- "http://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd"&gt;
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN"
+  "http://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd"&gt;
 &lt;article dtd-version="1.1" 
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
  ...
 &lt;/article&gt;</code></pre>
 </li>
 	<li><strong>@noNamespaceSchemaLocation attribute</strong>.For example:
-<pre>&lt;article dtd-version="1.1" 
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:mml="http://www.w3.org/1998/Math/MathML"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation=
- "http://jats.nlm.nih.gov/publishing/1.1/xsd/JATS-journalpublishing1.xsd"&gt;
- ...
-&lt;/article&gt;
-</pre>
+<pre><code class='language-markup'>&lt;article dtd-version="1.1" 
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation=
+            "http://jats.nlm.nih.gov/publishing/1.1/xsd/JATS-journalpublishing1.xsd"&gt;
+  ...
+&lt;/article&gt;</code></pre>
 </li>
 	<li><strong>xml-model processing instruction</strong>. An article can use the &lt;?xml-model?&gt; processing instruction (see <a href="http://www.w3.org/XML/2010/01/xml-model/" target="_blank">the specification</a>), to refer to <i><span style="font-weight: 400;">any</span></i> of the three languages of JATS. When using the &lt;?xml-model?&gt; processing instruction, place it before the root element. The processing instruction MUST have an @href pseudo-attribute, and the content of this pseudo-attribute must be the absolute, complete URL of the schema.For example, the following is an example of using the processing instruction to refer to the DTD:
 <pre><code class='language-markup'>&lt;?xml-model type="application/xml-dtd"
@@ -94,25 +93,22 @@ There are three different methods that an article XML file can use to refer to i
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
  ...
-&lt;/article&gt;</code>
-</pre>
+&lt;/article&gt;</code></pre>
 The following is an example of using it to reference the Relax-NG version of JATS:
-<pre>&lt;?xml-model schematypens="http://relaxng.org/ns/structure/1.0"
+<pre><code class='language-markup'>&lt;?xml-model schematypens="http://relaxng.org/ns/structure/1.0"
  href="http://jats.nlm.nih.gov/publishing/1.1/rng/JATS-journalpublishing1.rng"?&gt;
 &lt;article dtd-version="1.1" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
- ...
-</pre>
+ ...</code></pre>
 And finally, to reference the W3C XSD version:
-<pre>&lt;?xml-model schematypens="http://www.w3.org/2001/XMLSchema"
+<pre><code class='language-markup'>&lt;?xml-model schematypens="http://www.w3.org/2001/XMLSchema"
  href="http://jats.nlm.nih.gov/publishing/1.1/xsd/JATS-journalpublishing1.xsd"?&gt;
 &lt;article dtd-version="1.1" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
  ...
-&lt;/article&gt;
-</pre>
+&lt;/article&gt;</code></pre>
 </li>
 	<li><strong>Character encoding</strong>. All JATS XML documents should be encoded either as UTF-8 or UTF-16.Note: A byte order mark (BOM)
 <ul style="margin-top: 15px;">
@@ -123,5 +119,3 @@ Also note that US-ASCII, which is commonly used, is a subset of UTF-8, so files 
 	<li><strong>Character entity references.</strong> Do not use named character entity references to represent special characters (see rationale, below). Instead, use either a non-escaped form of the character or a numeric character reference.<i>Rationale</i>: The JATS DTDs define a large set of character entity references (CERs), that they inherit from MathML. (See  MathML <a href="http://www.w3.org/TR/MathML2/chapter6.html">Chapter 6. Characters Entities and Fonts</a> for a list.)  These appear in XML document as, for example, “&amp;copy;”, and get translated by the XML parser into Unicode code points. In order to correctly parse XML files that use CERs, a tool would be required to fetch and parse the entire DTD. Because configuring a system to correctly fetch a DTD, either from the Internet, or from an internally cached version, can be quite burdensome, JATS4R recommends that instance documents <i>do not use CERs</i>.Note that this do not include the five “built-in” XML character entities <span style="font-weight: 400;"> “&amp;lt;”, “&amp;gt;”, “&amp;apos;”, “&amp;quot;” and “&amp;amp;”</span>. All XML-compliant parsers are able to expand these without reference to the DTDs.So, for example, the following copyright-statement would not be JATS4R-compliant:&lt;copyright-statement&gt;&amp;copy; 2014 Surname et al.&lt;/copyright-statement&gt;Instead, the copyright symbol should be included either directly in the document in non-escaped form (preferred):&lt;copyright-statement&gt;© 2014 Surname et al.&lt;/copyright-statement&gt;or, as a numeric character reference:&lt;copyright-statement&gt;© 2014 Surname et al.&lt;/copyright-statement&gt;</li>
 	<li>@dtd-version attribute. Use the @dtd-version attribute on &lt;article&gt; with the value that is FIXED (or default) in the schema that is referenced in the DOCTYPE (for DTD), @schemaLocation or @noNamespaceSchemaLocation attribute (for XSD), or processing instruction (for RNG). [Validator tool result: Warning if it’s not there]</li>
 </ol>
-
-<pre><code class="language-markup">&lt;foo/></code></pre>
