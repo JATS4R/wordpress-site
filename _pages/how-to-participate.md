@@ -12,11 +12,11 @@ spacious_page_layout:
 ---
 <h1>JATS4R needs you! Here's how you can participate</h1>
 <ol class="quick-list">
-	<li>Send us your XML samples! (jats4r@gmail.com, subject line: Samples)</li>
+	<li>Send us your XML samples! (<span style="color: #0000ff;"><strong>jats4r@gmail.com</strong>, subject line: Samples</span>)</li>
 	<li>Join the calls and help develop the recommendations</li>
 	<li>Subscribe to our Google email list to follow along and help by commenting on or editing recommendations documents in draft</li>
-	<li>Contribute work on the validator tool (jats4r@gmail.com, subject line: Validator Tool)</li>
-	<li>Write an XML article on your favourite topic (jats4r@gmail.com, subject line: XML article)</li>
+	<li>Contribute work on the validator tool (<span style="color: #0000ff;"><strong>jats4r@gmail.com</strong>, subject line: Validator Tool</span>)</li>
+	<li>Write an XML article on your favourite topic (<span style="color: #0000ff;"><strong>jats4r@gmail.com</strong>, subject line: XML article</span>)</li>
 </ol>
 <h2>Send us your XML samples!</h2>
 We would like to see as many full-text XML samples as possible from publishers so that we can best represent how people are tagging their content when we make our recommendations. The samples are for analysis only so that we get a full picture of how JATS is being used. We won't share your samples, and if you like, we can anonymise them (or you can do that yourself before sending). Please send samples to jats4r[at]gmail.com.
