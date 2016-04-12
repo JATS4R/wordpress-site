@@ -11,8 +11,8 @@ spacious_page_layout:
   - no_sidebar_content_centered
 ---
 <h1>Recommendations</h1>
-The JATS4R recommendations pages contain the definitive JATS4R recommendations on tagging content in JATS XML so that it is as reusable as possible, especially by machines. Here you will find the following:
-<ol>
-	<li>A page of<a href="http://jats4r.org/general-recommendations/"> general recommendations</a> that apply to any JATS XML document as a whole.</li>
-	<li>A page that contains tagging recommendations for each article object (such as <a href="http://jats4r.org/permissions-recommendations/">permissions</a>, <a href="http://jats4r.org/math-recommendations/">math</a>, &amp;c).</li>
-</ol>
+The JATS4R recommendations pages contain the definitive JATS4R recommendations on tagging content in JATS XML so that it is as reusable as possible, especially by machines.
+
+The JATS4R workflow to create recommendations is summarized here:
+
+[caption id="attachment_683" align="alignnone" width="226"]<a href="http://jats4r.org/wp-content/uploads/2016/03/jats4r-workflow.png" rel="attachment wp-att-683"><img class=" wp-image-683" src="http://jats4r.org/wp-content/uploads/2016/03/jats4r-workflow-179x300.png" alt="JATS4R creates recommendations as follows: solicit examples from publishers and other sources, analyse samples for patterns, or commonalities in tagging, discuss recommendations that would optimize reusabliiy, publicly post draft recommendations for review, finalise recommendations, program validation rules using schematron into the JATS4R validator" width="226" height="379" /></a> The JATS4R recommendations workflow[/caption]
