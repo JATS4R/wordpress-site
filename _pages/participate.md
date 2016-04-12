@@ -7,6 +7,8 @@ post_excerpt: ""
 layout: page
 permalink: http://jats4r.org/participate/
 published: true
+spacious_page_layout:
+  - no_sidebar_content_centered
 ---
 <h1>Participate!</h1>
 <h2>JATS4R is collaborative and inclusive</h2>
