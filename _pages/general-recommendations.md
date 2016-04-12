@@ -124,4 +124,4 @@ Also note that US-ASCII, which is commonly used, is a subset of UTF-8, so files 
 	<li>@dtd-version attribute. Use the @dtd-version attribute on &lt;article&gt; with the value that is FIXED (or default) in the schema that is referenced in the DOCTYPE (for DTD), @schemaLocation or @noNamespaceSchemaLocation attribute (for XSD), or processing instruction (for RNG). [Validator tool result: Warning if it’s not there]</li>
 </ol>
 
-<pre><code class="language-markup">p { color: red }</code></pre>
+<pre><code class="language-markup">&lt;foo/></code></pre>
