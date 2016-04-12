@@ -8,8 +8,6 @@ layout: page
 permalink: >
   http://jats4r.org/permissions-recommendations/
 published: true
-spacious_page_layout:
-  - no_sidebar_content_centered
 ---
 <h1 class="rec-heading">Permissions</h1>
 <span class="status">Status: <strong><span style="color: #29cf84;">FINAL</span></strong></span>
@@ -20,8 +18,7 @@ These recommendations contain best practices for indicating the permissions (cop
 <h2>Remarks:</h2>
 <ol>
 	<li>Per the JATS documentation, &lt;copyright-statement&gt; and &lt;license-p&gt; are intended for display purposes only, and are therefore not addressed by these recommendations because they are not intended to be mined for data. The &lt;license-p&gt; element is the domain for editorial information and context. Links to licenses might appear within these human-readable sections, but those links should not assumed to be machine readable, and should be ignored by automated processes. <span style="color: #008080;">[[Validator tool result: info]]</span></li>
-	<li>In some cases, an article may contain document objects (such as figures or tables) that have licenses which are different from the license that applies to the article as a whole. For example, a CC-BY journal article might contain a figure reproduced from an article published under a non-CC-BY license. That figure must then contain a separate &lt;permissions&gt; element; every other article obThese recommendations contain best practices for indicating the permissions (copyright and licensing information) associated with an article as a whole, or with part of an article (such as a figure). For a list of document objects and the corresponding elements to which &lt;permissions&gt; can apply, please see this list. The permissions information associated with the whole document is contained within the article metadata.</li>
-	<li>Article objects will be considered to inherit the permissions as set out in &lt;article-meta&gt;, which applies to the journal article as a whole. Multiple components of an article can have their own &lt;permissions&gt; element and, if tagged as such, each of these components would not inherit the permission set in the &lt;article-meta&gt;. The separate &lt;permissions&gt; provided for the component must be complete, containing &lt;copyright-statement&gt;, &lt;copyright-year&gt;, &lt;copyright-holder&gt;, and &lt;license&gt;.</li>
+	<li>In some cases, an article may contain document objects (such as figures or tables) that have licenses which are different from the license that applies to the article as a whole. For example, a CC-BY journal article might contain a figure reproduced from an article published under a non-CC-BY license. That figure must then contain a separate &lt;permissions&gt; element; every other article object will be considered to inherit the permissions as set out in &lt;article-meta&gt;, which applies to the journal article as a whole. Multiple components of an article can have their own &lt;permissions&gt; element and, if tagged as such, each of these components would not inherit the permission set in the &lt;article-meta&gt;. The separate &lt;permissions&gt; provided for the component must be complete, containing &lt;copyright-statement&gt;, &lt;copyright-year&gt;, &lt;copyright-holder&gt;, and &lt;license&gt;.</li>
 	<li>Concerning @license-type on &lt;license&gt; element: This attribute can be useful inside a closed system. However, in terms of reusing content, the values of this attribute have not been standardized (i.e., its values are not controlled and are therefore not usable by automated systems), so  it can’t be used to provide reliably useful information, and therefore a formal recommendation has not been made for this attribute here.  <span style="color: #008080;">[[Validator tool result: info]]</span></li>
 </ol>
 <h2>Recommendations</h2>
@@ -32,7 +29,7 @@ These recommendations contain best practices for indicating the permissions (cop
 	<li><b>&lt;copyright-holder&gt;</b> When a work is protected by copyright, this element should be used and should identify the person or institution that holds the copyright. <span style="color: #008080;">[[Validator tool result: Error]]</span></li>
 	<li><b>@xlink:href on &lt;license&gt; or &lt;ali:license_ref&gt; (depending on the DTD version) </b>If a license is defined by a URI (for example, any of the Creative Commons licenses), this should be the sole place that a machine (or anyone) should need to look for the license URI.
 <ol>
-	<li>For JATS version 1.1d3 and forward, the license URI should be contained within <b>&lt;ali:license_ref&gt;</b>. <span style="color: #008080;">[[Validator tool result: Warning when &lt;ali:license_ref does not contain the URL for the license ]]</span></li>
+	<li>For JATS version 1.1d3 and forward, the license URI should be contained within <b>&lt;ali:license_ref&gt;</b>. <span style="color: #008080;">[[Validator tool result: Warning when &lt;ali:license_ref&gt; does not contain the URL for the license ]]</span></li>
 	<li>For JATS version 1.1d2 and backward,  use the URI as the value of @xlink:href on &lt;license&gt;. <span style="color: #008080;">[[Validator tool result: Warning when &lt;license&gt; doesn’t have @xlink:</span>href<span style="color: #008080;">  ]]</span></li>
 </ol>
 </li>
@@ -44,7 +41,7 @@ These recommendations contain best practices for indicating the permissions (cop
 <b>Example 1: Permissions that apply to an entire journal article</b>
 
 Example 1a: JATS version 1.1d3 and forward
-<pre>&lt;article xmlns:ali="http://www.niso.org/schemas/ali/1.0" … &gt;
+<pre>&lt;article xmlns:ali="http://www.niso.org/schemas/ali/1.0" ...&gt;
 ...
 &lt;permissions&gt;
  &lt;copyright-statement&gt;© 2014 Surname et al.&lt;/copyright-statement&gt;
@@ -62,7 +59,7 @@ Example 1a: JATS version 1.1d3 and forward
  either DOI or URL of the article must be cited.&lt;/license-p&gt;
  &lt;/license&gt;
 &lt;/permissions&gt;
-…
+...
 &lt;/article&gt;
 </pre>
 Example 1b: JATS version 1.1d2 and backward
