@@ -78,11 +78,10 @@ There are three different methods that an article XML file can use to refer to i
 </li>
 	<li><strong>@noNamespaceSchemaLocation attribute</strong>.For example:
 <pre><code class='language-markup'>&lt;article dtd-version="1.1" 
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:mml="http://www.w3.org/1998/Math/MathML"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation=
-            "http://jats.nlm.nih.gov/publishing/1.1/xsd/JATS-journalpublishing1.xsd"&gt;
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://jats.nlm.nih.gov/publishing/1.1/xsd/JATS-journalpublishing1.xsd"&gt;
   ...
 &lt;/article&gt;</code></pre>
 </li>
