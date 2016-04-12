@@ -88,13 +88,13 @@ There are three different methods that an article XML file can use to refer to i
 </pre>
 </li>
 	<li><strong>xml-model processing instruction</strong>. An article can use the &lt;?xml-model?&gt; processing instruction (see <a href="http://www.w3.org/XML/2010/01/xml-model/" target="_blank">the specification</a>), to refer to <i><span style="font-weight: 400;">any</span></i> of the three languages of JATS. When using the &lt;?xml-model?&gt; processing instruction, place it before the root element. The processing instruction MUST have an @href pseudo-attribute, and the content of this pseudo-attribute must be the absolute, complete URL of the schema.For example, the following is an example of using the processing instruction to refer to the DTD:
-<pre>&lt;?xml-model type="application/xml-dtd"
+<pre><code class='language-markup'>&lt;?xml-model type="application/xml-dtd"
  href="http://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd"?&gt;
 &lt;article dtd-version="1.1" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
  ...
-&lt;/article&gt;
+&lt;/article&gt;</code>
 </pre>
 The following is an example of using it to reference the Relax-NG version of JATS:
 <pre>&lt;?xml-model schematypens="http://relaxng.org/ns/structure/1.0"
