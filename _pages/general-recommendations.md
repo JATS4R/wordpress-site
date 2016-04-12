@@ -9,7 +9,7 @@ permalink: >
   http://jats4r.org/general-recommendations/
 published: true
 spacious_page_layout:
-  - default_layout
+  - no_sidebar_content_centered
 ---
 <h1 class="rec-heading">General recommendations</h1>
 <span class="status">Status: <span style="color: #ff9900;"><strong>DRAFT</strong></span></span>
@@ -67,7 +67,7 @@ There are three different methods that an article XML file can use to refer to i
 </table>
 </li>
 	<li><strong>DOCTYPE declarations</strong>. The most common JATS articles use a DOCTYPE declaration to reference the specific version of the JATS DTD. When using a DOCTYPE declaration, the document must use PUBLIC form, with the public identifier, and the complete, absolute URL of the system identifier.For example:
-<pre><code class='language-markup'>&lt;!DOCTYPE article
+<pre><code class="language-markup">&lt;!DOCTYPE article
   PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN"
   "http://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd"&gt;
 &lt;article dtd-version="1.1" 
@@ -77,7 +77,7 @@ There are three different methods that an article XML file can use to refer to i
 &lt;/article&gt;</code></pre>
 </li>
 	<li><strong>@noNamespaceSchemaLocation attribute</strong>.For example:
-<pre><code class='language-markup'>&lt;article dtd-version="1.1" 
+<pre><code class="language-markup">&lt;article dtd-version="1.1" 
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:mml="http://www.w3.org/1998/Math/MathML"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -86,7 +86,7 @@ There are three different methods that an article XML file can use to refer to i
 &lt;/article&gt;</code></pre>
 </li>
 	<li><strong>xml-model processing instruction</strong>. An article can use the &lt;?xml-model?&gt; processing instruction (see <a href="http://www.w3.org/XML/2010/01/xml-model/" target="_blank">the specification</a>), to refer to <i><span style="font-weight: 400;">any</span></i> of the three languages of JATS. When using the &lt;?xml-model?&gt; processing instruction, place it before the root element. The processing instruction MUST have an @href pseudo-attribute, and the content of this pseudo-attribute must be the absolute, complete URL of the schema.For example, the following is an example of using the processing instruction to refer to the DTD:
-<pre><code class='language-markup'>&lt;?xml-model type="application/xml-dtd"
+<pre><code class="language-markup">&lt;?xml-model type="application/xml-dtd"
  href="http://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd"?&gt;
 &lt;article dtd-version="1.1" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -94,14 +94,14 @@ There are three different methods that an article XML file can use to refer to i
  ...
 &lt;/article&gt;</code></pre>
 The following is an example of using it to reference the Relax-NG version of JATS:
-<pre><code class='language-markup'>&lt;?xml-model schematypens="http://relaxng.org/ns/structure/1.0"
+<pre><code class="language-markup">&lt;?xml-model schematypens="http://relaxng.org/ns/structure/1.0"
  href="http://jats.nlm.nih.gov/publishing/1.1/rng/JATS-journalpublishing1.rng"?&gt;
 &lt;article dtd-version="1.1" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
  ...</code></pre>
 And finally, to reference the W3C XSD version:
-<pre><code class='language-markup'>&lt;?xml-model schematypens="http://www.w3.org/2001/XMLSchema"
+<pre><code class="language-markup">&lt;?xml-model schematypens="http://www.w3.org/2001/XMLSchema"
  href="http://jats.nlm.nih.gov/publishing/1.1/xsd/JATS-journalpublishing1.xsd"?&gt;
 &lt;article dtd-version="1.1" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
