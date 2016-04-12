@@ -7,8 +7,6 @@ post_excerpt: ""
 layout: page
 permalink: http://jats4r.org/participate/
 published: true
-spacious_page_layout:
-  - no_sidebar_content_centered
 ---
 <h1>Participate!</h1>
 <h2>JATS4R is collaborative and inclusive</h2>
@@ -75,7 +73,7 @@ The organizations listed below <strong><a href="http://jats4r.org/how-to-partici
 </tr>
 <tr>
 <td>Plazi</td>
-<td></td>
+<td> <img class="alignnone size-full wp-image-659" src="http://jats4r.org/wp-content/uploads/2015/12/Plazi_logo_v3_gbif-1.gif" alt="Plazi_logo_v3_gbif" width="160" height="57" /></td>
 </tr>
 <tr>
 <td>PLOS</td>
