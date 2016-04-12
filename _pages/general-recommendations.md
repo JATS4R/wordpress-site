@@ -8,13 +8,11 @@ layout: page
 permalink: >
   http://jats4r.org/general-recommendations/
 published: true
-spacious_page_layout:
-  - no_sidebar_content_centered
 ---
 <h1 class="rec-heading">General recommendations</h1>
 <span class="status">Status: <span style="color: #ff9900;"><strong>DRAFT</strong></span></span>
 <h2>Context</h2>
-&lt;?xml version="1.0"&gt;
+JATS articles as XML documents.
 <h2>Description</h2>
 These recommendations apply to an article’s XML as a whole; i.e., they are best practices for setting up a JATS article XML document.
 
@@ -120,9 +118,7 @@ And finally, to reference the W3C XSD version:
 	<li>Must be present if the encoding is UTF-16&lt;</li>
 </ul>
 Also note that US-ASCII, which is commonly used, is a subset of UTF-8, so files that are restricted to the US-ASCII are perfectly fine, but if an XML declaration is given, the encoding should be specified as “utf-8”. [Validator tool result: Error]</li>
-	<li><strong>Character entity references.</strong> Do not use named character entity references to represent special characters (see rationale, below). Instead, use either a non-escaped form of the character or a numeric character reference.<i>Rationale</i>: The JATS DTDs define a large set of character entity references (CERs), that they inherit from MathML. (See  MathML <a href="http://www.w3.org/TR/MathML2/chapter6.html">Chapter 6. Characters Entities and Fonts</a> for a list.)  These appear in XML document as, for example, “&amp;copy;”, and get translated by the XML parser into Unicode code points. In order to correctly parse XML files that use CERs, a tool would be required to fetch and parse the entire DTD. Because configuring a system to correctly fetch a DTD, either from the Internet, or from an internally cached version, can be quite burdensome, JATS4R recommends that instance documents <i>do not use CERs</i>.Note that this do not include the five “built-in” XML character entities <span style="font-weight: 400;"> “&amp;lt;”, “&amp;gt;”, “&amp;apos;”, “&amp;quot;” and “&amp;amp;”</span>. All XML-compliant parsers are able to expand these without reference to the DTDs.So, for example, the following copyright-statement would not be JATS4R-compliant:&lt;copyright-statement&gt;&amp;copy; 2014 Surname et al.&lt;/copyright-statement&gt;Instead, the copyright symbol should be included either directly in the document in non-escaped form (preferred):&lt;copyright-statement&gt;© 2014 Surname et al.&lt;/copyright-statement&gt;
-
-or, as a numeric character reference:
+	<li><strong>Character entity references.</strong> Do not use named character entity references to represent special characters (see rationale, below). Instead, use either a non-escaped form of the character or a numeric character reference.<i>Rationale</i>: The JATS DTDs define a large set of character entity references (CERs), that they inherit from MathML. (See  MathML <a href="http://www.w3.org/TR/MathML2/chapter6.html">Chapter 6. Characters Entities and Fonts</a> for a list.)  These appear in XML document as, for example, “&amp;copy;”, and get translated by the XML parser into Unicode code points. In order to correctly parse XML files that use CERs, a tool would be required to fetch and parse the entire DTD. Because configuring a system to correctly fetch a DTD, either from the Internet, or from an internally cached version, can be quite burdensome, JATS4R recommends that instance documents <i>do not use CERs</i>.Note that this do not include the five “built-in” XML character entities <span style="font-weight: 400;"> “&amp;lt;”, “&amp;gt;”, “&amp;apos;”, “&amp;quot;” and “&amp;amp;”</span>. All XML-compliant parsers are able to expand these without reference to the DTDs.So, for example, the following copyright-statement would not be JATS4R-compliant:&lt;copyright-statement&gt;&amp;copy; 2014 Surname et al.&lt;/copyright-statement&gt;Instead, the copyright symbol should be included either directly in the document in non-escaped form (preferred):&lt;copyright-statement&gt;© 2014 Surname et al.&lt;/copyright-statement&gt;or, as a numeric character reference:
 
 &lt;copyright-statement&gt;© 2014 Surname et al.&lt;/copyright-statement&gt;</li>
 	<li>@dtd-version attribute. Use the @dtd-version attribute on &lt;article&gt; with the value that is FIXED (or default) in the schema that is referenced in the DOCTYPE (for DTD), @schemaLocation or @noNamespaceSchemaLocation attribute (for XSD), or processing instruction (for RNG). [Validator tool result: Warning if it’s not there]</li>
