@@ -8,7 +8,7 @@ layout: page
 permalink: http://jats4r.org/current-next-recs/
 published: true
 spacious_page_layout:
-  - default_layout
+  - no_sidebar_content_centered
 ---
 <h1>Current and next recommendations</h1>
 JATS4R's current focus for recommendations is on the following:
