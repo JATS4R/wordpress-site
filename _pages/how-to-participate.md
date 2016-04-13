@@ -25,11 +25,9 @@ JATS4R meets biweekly by conference call to develop its recommendations. All are
 <h2>Subscribe to the JATS4R Google mailing lists to follow along and help by commenting or reviewing</h2>
 JATS4R has two Google mail lists (mail forums), and both are public and open to anyone interested:
 <ul>
-	<li>The <a href="https://groups.google.com/forum/#!forum/jats4r">Main JATS4R list</a> (aka the 'big' list) is where JATS4R puts out any public notices, such as notices of upcomming recommendation discussions or tagging recommendation announcements</li>
+	<li>The <a href="https://groups.google.com/forum/#!forum/jats4r">Main JATS4R list</a> (aka the 'big' list) is where JATS4R puts out any public notices, such as notices of upcoming recommendation discussions or tagging recommendation announcements</li>
 	<li>The <a href="https://groups.google.com/forum/#!forum/jats4r-admin">JATS4R Admin list </a>is for all adminstrivia related to JATS4R. We use this forum for such things as collaborating on abstracts for conferences, communications projects, validator tool discussions, and anything else that is related to running or organising JATS4R</li>
 </ul>
-<h2></h2>
-<h2>Work</h2>
 <h2></h2>
 <h2>Follow us on Twitter @JATS4R</h2>
 To help spread the word about the JATS4R initiative and encourage adoption, JATS4R needs to reach as many folks in scholarly publishing as possible. Please follow us.
