@@ -16,5 +16,5 @@ spacious_page_layout:
 	<li>Github: <a href="https://github.com/jats4r/JATS4R-Participant-Hub" target="_blank">https://github.com/jats4r/JATS4R-Participant-Hub</a></li>
 	<li>Google mailing list (main; aka the 'big' list): <a href="https://groups.google.com/forum/#!forum/jats4r" target="_blank">https://groups.google.com/forum/#!forum/jats4r</a></li>
 	<li>Google mailing list (admin, but all welcome): <a href="https://groups.google.com/forum/#!forum/jats4r-admin" target="_blank">https://groups.google.com/forum/#!forum/jats4r-admin</a></li>
+	<li><strong><a href="https://twitter.com/JATS4R" target="_blank">@jats4r</a></strong></li>
 </ul>
-<h2><strong>@jats4r</strong></h2>
