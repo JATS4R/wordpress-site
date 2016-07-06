@@ -67,4 +67,5 @@ In contrast to what is stated in the Tag Library (“Type of publication identif
    &lt;version designator="16.2"&gt;16th version, second release&lt;/version&gt;
    &lt;/element-citation&gt;
 &lt;/ref&gt;
+
 </pre>
