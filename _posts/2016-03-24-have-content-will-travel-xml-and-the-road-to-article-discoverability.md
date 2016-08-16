@@ -31,7 +31,7 @@ Computers need indicators built into an article so that they can recognize that 
 
 In modern scholarly publishing systems, a programming language called XML is used to enable computerized systems to identify journal articles and the objects they contain. XML stands for eXtensible Mark-up Language, and it basically consists of a set of labeled (or tagged) containers for the various parts of scholarly article and journal content.  Both humans and computers can understand XML, and once applied to an article’s content, that content can enter its multiverse and travel anywhere it needs to go.
 
-<span id="text-blob">Consider this:</span>
+<p="text-blob">Consider this:</p>
 
 <a href="http://jats4r.org/wp-content/uploads/2016/03/greek_text.png" rel="attachment wp-att-502"><img class="alignnone wp-image-502" src="http://jats4r.org/wp-content/uploads/2016/03/greek_text-300x91.png" alt="greek_text" width="343" height="104" /></a>
 
