@@ -13,7 +13,7 @@ spacious_page_layout:
 <h1>JATS4R needs you! Here's how you can participate</h1>
 <ol class="quick-list">
 	<li><a href="#send-xml">Send us your XML samples!</a> (<strong>jats4r@gmail.com</strong>, subject line: Samples)</li>
-	<li><a href="#join-calls">Join the calls</a> and help develop the recommendations <span style="color: #ff00ff;">[[Next call: Thursday 9 June, (2PM BST, 1PM UTC, 3PM CEST, 9am EST); <a style="color: #ff00ff;" href="https://docs.google.com/document/d/134cXv6KY0Py0E0KsgEL1ExvkkcWfEa3wKsMmV353T38/edit#">see details here</a>]]</span></li>
+	<li><a href="#join-calls">Join the calls</a> and help develop the recommendations <span style="color: #ff00ff;">[[Next call: Thursday 18 August, (2PM BST, 1PM UTC, 3PM CEST, 9am EST); <a style="color: #ff00ff;" href="https://docs.google.com/document/d/134cXv6KY0Py0E0KsgEL1ExvkkcWfEa3wKsMmV353T38/edit#">see details here</a>]]</span></li>
 	<li><a href="#subscribe">Subscribe to our <strong>Google email list</strong></a> to follow along and help by commenting on or editing recommendations documents in draft</li>
 	<li><a href="#contribute-validator">Contribute work on the validator tool</a> (<strong>jats4r@gmail.com</strong>, subject line: Validator Tool)</li>
 	<li>Follow JATS4R on Twitter (<a href="https://twitter.com/JATS4R" target="_blank">@jats4R</a>)</li>
