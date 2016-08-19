@@ -4,7 +4,7 @@ post_title: >
   Why Metadata Matters More than Ever (and
   how you can optimise yours for
   reusability)
-author: seligym@gmail.com
+author: Mary Seligy
 post_date: 2016-08-19 14:09:20
 post_excerpt: ""
 layout: post
@@ -52,5 +52,5 @@ Look at the <a href="http://jats.nlm.nih.gov/publishing/tag-library/1.1/">JATS t
 
 <a href="http://jats.nlm.nih.gov/publishing/tag-library/1.1/">Follow JATS4R</a>. ‘Common’ practice does not mean ‘best’ practice, and although the JATS tag library mentions one or two best practices, it is really not its purview. However, it is the mandate of JATS4R to develop and recommend best practices for tagging content that is machine friendly. Follow or become involved with JATS4R here: <a href="http://jats.nlm.nih.gov/publishing/tag-library/1.1/">http://jats4r.org/how-to-participate/</a>
 Talk to other publishers, to see how they tag things. Better yet, ask them to come along to the next JATS4R call.
-<p style="font-size: 90%;"><em>By Mary Seligy, on behalf of JATS4R. Mary is currently a business analyst at <a href="http://cdnsciencepub.com">Canadian Science Publishing</a>.
+<p style="font-size: 90%;"><em>By Mary Seligy, on behalf of JATS4R. Mary is currently a business analyst at <a href="http://cdnsciencepub.com">Canadian Science Publishing</a>.<br>Illstration credit: Mary Seligy. <br>
 If you would like to contribute an article to the JATS4R XML Learning Centre or have a suggestion, please email <a href="mailto:jats4r@gmail.com">jats4r@gmail.com</a></em></p>
